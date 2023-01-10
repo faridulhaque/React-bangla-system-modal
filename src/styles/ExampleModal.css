@@ -1,3 +1,4 @@
+/* put this css in a global file or use them for all of your modals */
 .modal-group-fixed {
     width: 100%;
     height: 100vh;
@@ -15,35 +16,31 @@
 
 }
 
-.modal-box {
+/* put these^^ css in a global file or use them for all of your modals */
+
+/* Take idea from the below codes and write css for your modal */
+
+
+.my-modal {
+    background-color: #009999;
 
     position: absolute;
     left: 0;
     right: 0;
     top: 0;
     bottom: 0;
-    margin: auto;
+    margin: auto auto auto auto;
     box-shadow: 0 0 5px #333;
     animation: modal-motion 0.5s;
     z-index: 20;
     width: 50%;
     height: 300px;
-
-}
-
-.modal-specific{
-    width: 100%;
-    height: 100%;
-    position: relative;
-    background-color: #009999;
-    padding-top: 5px;
-    border-radius: 10px;
-
+    border-radius: 5px;
 
 }
 
 
-.modal-close {
+.my-modal-close {
     width: 35px;
     height: 40px;
     border-radius: 50%;
@@ -60,13 +57,13 @@
 
 }
 
-.modal-specific h1 {
+.my-modal-heading {
     color: white;
     font-weight: 600;
     text-align: center;
 }
 
-.modal-buttons-wrapper{
+.my-modal-buttons{
     width: 100%;
     height: 60px;
     display: flex;
@@ -75,7 +72,7 @@
     margin-top: 25px;
 }
 
-.modal-buttons-wrapper button{
+.my-modal-buttons button{
     width: 100px;
     margin-top: 0;
     height: 40px;
@@ -93,7 +90,7 @@
 @keyframes modal-motion {
     0% {
         opacity: 0;
-        transform: translateY(-50px);
+        transform: translateY(-100px);
     }
 
     100% {

@@ -33,26 +33,24 @@ const ExampleModal = ({ setOpen, open }) => {
                 className="modal-group-relative"
             >
 
-                <div ref={modalRef} className="modal-box">
-                    <div className="modal-specific">
-                        <h1>
-                            Do you want to delete the project?
-                        </h1>
-                        <div className="modal-buttons-wrapper">
+                <div ref={modalRef} className="my-modal">
+                    <h1 className='my-modal-heading'>
+                        Do you want to delete the project?
+                    </h1>
+                    <div className="my-modal-buttons">
 
-                            <button
-                                onClick={() => setOpen(false)}
-
-                            >
-                                Cancel
-                            </button>
-                            <button onClick={() => alert('your item has been deleted')}>
-                                Confirm
-                            </button>
-                        </div>
                         <button
-                            className="modal-close" onClick={() => setOpen(false)}>X</button>
+                            onClick={() => setOpen(false)}
+
+                        >
+                            Cancel
+                        </button>
+                        <button onClick={() => alert('your item has been deleted')}>
+                            Confirm
+                        </button>
                     </div>
+                    <button
+                        className="my-modal-close" onClick={() => setOpen(false)}>X</button>
 
 
 
