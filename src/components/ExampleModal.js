@@ -32,9 +32,28 @@ const ExampleModal = ({ setOpen, open }) => {
             <div
                 className="modal-group-relative"
             >
-                <div ref={modalRef} className="modal-box modal-box-wh">
-                    <h1>React Bangla-System Modal</h1>
-                    <button className="modal-close" onClick={() => setOpen(false)}>X</button>
+
+                <div ref={modalRef} className="modal-box">
+                    <div className="modal-specific">
+                        <h1>
+                            Do you want to delete the project?
+                        </h1>
+                        <div className="modal-buttons-wrapper">
+
+                            <button
+                                onClick={() => setOpen(false)}
+
+                            >
+                                Cancel
+                            </button>
+                            <button onClick={() => alert('your item has been deleted')}>
+                                Confirm
+                            </button>
+                        </div>
+                        <button
+                            className="modal-close" onClick={() => setOpen(false)}>X</button>
+                    </div>
+
 
 
                 </div>
