@@ -21,9 +21,12 @@ const ExampleModal = ({ setOpen, open }) => {
         };
     }, [modalRef]);
 
-    // the codes to close the modal by clicking outside ended here.
+    // the codes of 'to close the modal by clicking outside' ended here.
 
-
+    const handleDelete = () => {
+        alert('your item has been deleted')
+        setOpen(false)
+    }
 
 
 
@@ -45,7 +48,7 @@ const ExampleModal = ({ setOpen, open }) => {
                         >
                             Cancel
                         </button>
-                        <button onClick={() => alert('your item has been deleted')}>
+                        <button onClick={handleDelete}>
                             Confirm
                         </button>
                     </div>
