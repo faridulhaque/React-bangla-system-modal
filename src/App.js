@@ -11,7 +11,7 @@ function App() {
   return (
     <>
     <div className={`${open ? "no-scroll" : 'home'}`}>
-      <h1>How to create a modal with only HTML, CSS and React (no external package installed)</h1>
+      <h1>A modal with only HTML, CSS and React (no external package installed)</h1>
 
       <div className="button-wrapper">
         
